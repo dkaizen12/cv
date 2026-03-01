@@ -1,0 +1,36 @@
+body {
+    background-image: url(../image/font1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_barre a{
+    padding-right: 7px ;
+    text-decoration: none;
+    color: black;
+}
+.nav_barre a:hover{
+    
+    text-decoration: underline;
+    color: gray;
+}
+
+#logo{
+    width: 140px;
+    height: auto;
+}
+main{
+    margin: 10%;
+    padding: 5px;
+
+}
+section{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 30px ;
+    margin: 2%;
+}
