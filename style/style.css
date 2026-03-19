@@ -2,35 +2,139 @@ body {
     background-image: url(../image/font1.jfif);
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+    padding: 10px;
 }
-.nav_barre a{
-    padding-right: 7px ;
+
+.titre h1 {
+    font-size: 20px;
+}
+
+.nav_barre a {
+    padding-right: 7px;
     text-decoration: none;
     color: black;
 }
-.nav_barre a:hover{
-    
+
+.nav_barre a:hover {
     text-decoration: underline;
     color: gray;
 }
 
-#logo{
+.profil {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.profil #logo {
     width: 140px;
     height: auto;
-}
-main{
-    margin: 10%;
-    padding: 5px;
-
-}
-section{
-    background-color: antiquewhite;
     border: 2px solid black;
-    border-radius: 30px ;
-    margin: 2%;
+    border-radius: 50%;
+}
+
+main {
+    padding: 15px;
+}
+
+.edito {
+    display: flex;
+}
+
+.edito #logo {
+    width: 240px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.citation {
+    padding-left: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: black;
+    border-radius: 50%;
+}
+
+.icon a:hover {
+    background: burlywood;
+    color: aqua;
+}
+
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill {
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25%;
+}
+
+.projets {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projet {
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 25%;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    padding-bottom: 10px;
+}
+.form_s{
+    padding-bottom: 10px;
+}
+input{
+    width: 700px;
+}
+.form_s input{
+    height: 300px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    background-color: blur();
+}
+
+.foot_i a {
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color: black;
+    border-radius: 50%;
+}
+
+.foot_i a:hover {
+    background: burlywood;
+    color: aqua;
 }

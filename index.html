@@ -11,6 +11,7 @@
     />
     <title>CV</title>
   </head>
+
   <body>
     <script src="js/script.js"></script>
     <header>
@@ -27,7 +28,7 @@
         </nav>
       </div>
     </header>
-      <section>
+    <div class="profil">
       <a href="image/chat.jpg" target="_blank">
         <img
           id="logo"
@@ -35,48 +36,87 @@
           alt="image de chat blanc à lunettes"
         />
       </a>
-      <p>
-        <a href="https://linkedin.com/in/dady-kalangoso-kangela-job">
-          profil Linkdln
-        </a>
-      </p>
-      <span><i class="fa-brands fa-facebook"></i></span>
-      <span><i class="fa-brands fa-whatsapp"></i></span>
-      <span><i class="fa-brands fa-linkedin"></i></span>
-      <span><i class="fa-brands fa-github"></i></span>
-      </section>
+    </div>
     <main>
+      <section class="edito">
+        <div>
+          <img src="image/chat.jpg" alt="chat" id="logo" />
+        </div>
 
-      <section class="section">
-        <h2>Mon expérience</h2>
-        <ul>
-          <li>Projet de messagerie</li>
-          <li>Site web vitrine</li>
-          <li>Jeux</li>
-        </ul>
+        <div class="citation">
+          <h2>Profil</h2>
+          <p>
+            Etudiant en première année de Bachelor data science & management à
+            l’EPF site de Cachan. Ma formation actuelle me permet de développer
+            des compétences en gestion de projet, management et organisation des
+            entreprises. Mes méthodes de travail, mon sérieux et mon
+            perfectionnisme me caractérisent et sont visibles dans mes projets.
+          </p>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+          </div>
+          <div>
+            <button>-> Contactez moi</button>
+          </div>
+        </div>
       </section>
-      <section class="section">
-        <h2>Mes compétences</h2>
-        <ul>
-          <li>web</li>
-          <li>python</li>
-          <li>C#</li>
-        </ul>
+      <h2>Mes compétences</h2>
+      <section class="skills">
+        <div class="skill">
+          <h3>Projet 1</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <p>description 1</p>
+        </div>
+
+        <div class="skill">
+          <h3>Projet 2</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <p>description 2</p>
+        </div>
       </section>
-      <section class="section">
-        <h2>Ma formation</h2>
-        <ul>
-          <li>bac scientifique</li>
-          <li>bachelor data science et mangement</li>
-        </ul>
+      <h3>Mon expérience</h3>
+      <section class="projets">
+        <div class="projet">
+          <h3>Projet 1</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <p>description 1</p>
+        </div>
+      </section>
+      <h3>Contact</h3>
+      <section class="Contact">
+        <form action="" method="get">
+          <div class="form">
+            <label for="fname">First Name : </label>
+            <input type="text" placeholder="Your first name" required />
+          </div>
+          <div class="form">
+            <label for="lname">Last Name : </label>
+            <input type="text" placeholder="Your Last name" required />
+          </div>
+          <div class="form_s">
+            <label for="name">Subject : </label>
+            <input
+              type="text"
+              placeholder="What are you talking about"
+              required
+            />
+          </div>
+        </form>
       </section>
     </main>
+
     <footer>
-      <span><i class="fa-brands fa-facebook"></i></span>
-      <span><i class="fa-brands fa-whatsapp"></i></span>
-      <span><i class="fa-brands fa-linkedin"></i></span>
-      <span><i class="fa-brands fa-github"></i></span>
-      <p>Copyright 2026</p>
+      <div class="foot_i">
+        <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+      </div>
+
+      <div class="foot_p"><p>Copyright 2026</p></div>
     </footer>
   </body>
 </html>
