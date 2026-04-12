@@ -65,17 +65,30 @@ main {
     display: flex;
     justify-content: flex-start;
 }
-
-.icon a {
-    padding-right: 10px;
-    padding-bottom: 10px;
+.icon i {
+    border : 1px solid black;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 15px;
+    margin-bottom: 10px;
     color: black;
+    text-align: center;
     border-radius: 50%;
 }
 
-.icon a:hover {
+.icon i:hover {
     background: burlywood;
     color: aqua;
+    border : 1px solid black;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
 }
 
 .skills {
