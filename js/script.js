@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 3. Animation fluide pour les ancres [cite: 13]
+  // 3. Animation fluide pour les ancres 
   document.querySelectorAll("nav a").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -40,4 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+  // 4. description des projets 
+  
 });

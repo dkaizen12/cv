@@ -1,8 +1,10 @@
 /* style génerique touchant les éléments html */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     overflow-x: hidden;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -11,24 +13,27 @@ body {
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif ;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
 }
+
 :root {
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: #8c00ff;
 }
+
 h2 {
     font-size: 50px;
     font-weight: 700;
     padding-left: 40px;
     text-shadow: 0 0 15px black;
 }
-.charge{
+
+.charge {
     position: fixed;
     top: 0;
     right: 0;
@@ -41,75 +46,99 @@ h2 {
     align-items: center;
     z-index: 999;
     transition: opacity 0.5s ease,
-                visibility 0.5s ease;
+        visibility 0.5s ease;
 }
-.charge span{
+
+.charge span {
     background-color: #3f65f0;
     border-radius: 100%;
     width: 25px;
     height: 25px;
     margin: 9px;
-    animation: bounce 1.2s infinite alternate ;
+    animation: bounce 1.2s infinite alternate;
 }
-.charge span:nth-child(1) { animation-delay: 0s; }
-.charge span:nth-child(2) { animation-delay: 0.4s; }
-.charge span:nth-child(3) { animation-delay: 0.8s; }
-.charge span:nth-child(4) { animation-delay: 1.2s; }
+
+.charge span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.charge span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.charge span:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.charge span:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
 .charge.cache {
     opacity: 0;
     visibility: hidden;
 }
 
 @keyframes bounce {
-    from { 
-        transform: translateY(0) scale(1); 
-        background-color: #3f65f0; 
+    from {
+        transform: translateY(0) scale(1);
+        background-color: #3f65f0;
     }
-    to   { 
-        transform: translateY(-20px) scale(1.2); 
-        background-color: #a0b4f9; 
+
+    to {
+        transform: translateY(-20px) scale(1.2);
+        background-color: #a0b4f9;
     }
 }
+
 /* header : en-tête */
 header {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.barre{
+
+.barre {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .titre h1 {
     font-size: 30px;
     padding-left: 20px;
     text-shadow: 0 0 15px black;
     transition: 0.5s ease;
 }
-.titre h1:hover{
+
+.titre h1:hover {
     transform: translateY(-5px);
 }
+
 .titre span {
     color: var(--main-color);
     text-shadow: 0 0 15px var(--main-color);
 }
+
 .nav_barre {
     margin-right: 30px;
 }
+
 .nav_barre a {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     padding-right: 10px;
     text-decoration: none;
     color: var(--text-color);
     transition: 0.3s ease;
 }
+
 .nav_barre a:hover {
     text-decoration: underline;
     color: var(--main-color);
 }
+
 /* Accueil */
 .edito_h {
     display: flex;
@@ -117,6 +146,7 @@ header {
     justify-content: center;
     min-height: 100vh;
 }
+
 .edito_h #logo {
     width: 550px;
     height: auto;
@@ -126,10 +156,12 @@ header {
     box-shadow: 0 0 50px var(--main-color);
     transition: .5s;
 }
-.edito_h #logo:hover{
+
+.edito_h #logo:hover {
     box-shadow: 0 0 150px var(--main-color);
     transform: scale(1.1);
 }
+
 /* Profil */
 .edito {
     display: flex;
@@ -138,6 +170,7 @@ header {
     min-height: 100vh;
     width: 100%;
 }
+
 .edito #logo_p {
     width: 400px;
     height: auto;
@@ -147,21 +180,26 @@ header {
     box-shadow: 0 0 50px var(--main-color);
     transition: .5s;
 }
-.edito #logo:hover{
+
+.edito #logo:hover {
     box-shadow: 0 0 150px var(--main-color);
     transform: scale(1.1);
 }
+
 .citation {
     padding-left: 60px;
     padding-right: 50px;
 }
-.citation p{
+
+.citation p {
     font-size: 20px;
 }
+
 .icon {
     display: flex;
     justify-content: flex-start;
 }
+
 .icon i {
     border: 1px solid var(--main-color);
     width: 52px;
@@ -176,6 +214,7 @@ header {
     box-shadow: 0 0 10px black;
     transition: 0.5s ease;
 }
+
 .icon i:hover {
     background: var(--main-color);
     color: var(--bg-color);
@@ -184,6 +223,7 @@ header {
     border-radius: 50%;
     transform: scale(1.2)translateY(-5px);
 }
+
 .edito button {
     width: 350px;
     height: 40px;
@@ -197,32 +237,60 @@ header {
     box-shadow: 0 0 10px black;
     transition: .5s ease;
 }
-.edito button:hover{
+
+.edito button:hover {
     background-color: var(--main-color);
     color: var(--bg-color);
     transform: translateY(-5px);
 }
+
 /*  Projets */
-.projets{
+.projets {
     margin: 20px;
 }
-.projets-grid{
+
+.projets-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 20px;
     width: 100%;
 }
-.projet{
+
+.projet {
     width: 100%;
     height: auto;
     object-fit: cover;
+    position: relative;
 }
-.projet img{
+
+.projet img {
     width: 100%;
     height: auto;
     object-fit: cover;
     box-shadow: 0 0 10px black;
+    display: block;
+}
+
+.info {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.projet:hover .info{
+    opacity: 1;
 }
 /* Formulaire de contact */
 form {
@@ -235,17 +303,20 @@ form {
     padding: 0 1rem;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
     box-shadow: 0 0 10px black;
 }
-textarea{
+
+textarea {
     height: 300px;
 }
-form button{
+
+form button {
     width: 100%;
     height: 50px;
     border-radius: 4px;
@@ -257,14 +328,17 @@ form button{
     margin-top: 20px;
     transition: .5s;
 }
-form button:hover{
+
+form button:hover {
     background-color: var(--main-color);
     color: var(--bg-color);
     transform: translateY(-5px);
 }
-form p{
+
+form p {
     text-align: center;
 }
+
 /* pied de page */
 footer {
     display: flex;
@@ -274,6 +348,7 @@ footer {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .foot_i i {
     border: 1px solid var(--main-color);
     width: 52px;
@@ -287,6 +362,7 @@ footer {
     transition: 0.5s ease;
     box-shadow: 0 0 10px black;
 }
+
 .foot_i i:hover {
     background: var(--main-color);
     color: var(--bg-color);
@@ -303,207 +379,242 @@ footer {
 }
 
 /* responsive mobile  */
-@media (min-width : 320px) and (max-width : 480px){
-h2 {
-    font-size: 30px;
-    font-weight: 700;
-    padding-left: 20px;
-    text-shadow: 0 0 15px var(--main-color);
-}
-/* header : en-tête */
-.barre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.titre h1 {
-    font-size: 30px;
-    padding-left: 20px;
-    text-shadow: 0 0 15px black;
-    transition: 0.5s ease;
-}
-.nav_barre {
-    margin-right: 3px;
-}
-.nav_barre a {
-    padding-right: 10px;
-    transition: 0.3s ease;
-}
-/* Accueil */
-.edito_h {
-    min-height: 50vh;
-}
-.edito_h #logo {
-    width: 250px;
-    border-radius: 50%;
-}
-/* Profil */
-.edito {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    min-height: 50vh;
-    width: 100%;
-}
-.edito #logo_p {
-    display: none;
-}
-.citation {
-    padding-left: 15px;
-    padding-right: 10px;
-}
-.icon {
-    display: flex;
-    justify-content: center;
-}
-.edito button {
-    width: 250px;
-    height: 40px;
-    border-radius: 50px 50px;
-    margin: 7px;
-}
-/*  Projets */
-.projets-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-}
-/* Formulaire de contact */
-form {
-    max-width: 100%;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
-    padding: 0 1rem;
+@media (min-width : 320px) and (max-width : 480px) {
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 20px;
+        text-shadow: 0 0 15px var(--main-color);
+    }
+
+    /* header : en-tête */
+    .barre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .titre h1 {
+        font-size: 30px;
+        padding-left: 20px;
+        text-shadow: 0 0 15px black;
+        transition: 0.5s ease;
+    }
+
+    .nav_barre {
+        margin-right: 3px;
+    }
+
+    .nav_barre a {
+        padding-right: 10px;
+        transition: 0.3s ease;
+    }
+
+    /* Accueil */
+    .edito_h {
+        min-height: 50vh;
+    }
+
+    .edito_h #logo {
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    /* Profil */
+    .edito {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        min-height: 50vh;
+        width: 100%;
+    }
+
+    .edito #logo_p {
+        display: none;
+    }
+
+    .citation {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .edito button {
+        width: 250px;
+        height: 40px;
+        border-radius: 50px 50px;
+        margin: 7px;
+    }
+
+    /*  Projets */
+    .projets-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Formulaire de contact */
+    form {
+        max-width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+        padding: 0 1rem;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        width: 90%;
+        box-shadow: 0 0 10px var(--main-color);
+    }
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
-    width: 90%;
-    box-shadow: 0 0 10px var(--main-color);
-}
-}
 /* responsive mobile alterner */
 @media (min-width :481px) and (max-width : 767px) {
-h2 {
-    font-size: 30px;
-    font-weight: 700;
-    padding-left: 20px;
-    text-shadow: 0 0 15px var(--main-color);
-}
-/* header : en-tête */
-.barre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.titre h1 {
-    font-size: 30px;
-    padding-left: 20px;
-    text-shadow: 0 0 15px black;
-    transition: 0.5s ease;
-}
-.nav_barre {
-    margin-right: 3px;
-}
-.nav_barre a {
-    padding-right: 10px;
-    transition: 0.3s ease;
-}
-/* Accueil */
-.edito_h {
-    min-height: 50vh;
-}
-.edito_h #logo {
-    width: 250px;
-    border-radius: 50%;
-}
-/* Profil */
-.edito {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    min-height: 50vh;
-    width: 100%;
-}
-.edito #logo_p {
-    display: none;
-}
-.citation {
-    padding-left: 15px;
-    padding-right: 10px;
-}
-.icon {
-    display: flex;
-    justify-content: center;
-}
-.edito button {
-    width: 250px;
-    height: 40px;
-    border-radius: 50px 50px;
-    margin: 7px;
-}
-/*  Projets */
-.projets-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-}
-/* Formulaire de contact */
-form {
-    max-width: 100%;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
-    padding: 0 1rem;
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 20px;
+        text-shadow: 0 0 15px var(--main-color);
+    }
+
+    /* header : en-tête */
+    .barre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .titre h1 {
+        font-size: 30px;
+        padding-left: 20px;
+        text-shadow: 0 0 15px black;
+        transition: 0.5s ease;
+    }
+
+    .nav_barre {
+        margin-right: 3px;
+    }
+
+    .nav_barre a {
+        padding-right: 10px;
+        transition: 0.3s ease;
+    }
+
+    /* Accueil */
+    .edito_h {
+        min-height: 50vh;
+    }
+
+    .edito_h #logo {
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    /* Profil */
+    .edito {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        min-height: 50vh;
+        width: 100%;
+    }
+
+    .edito #logo_p {
+        display: none;
+    }
+
+    .citation {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .edito button {
+        width: 250px;
+        height: 40px;
+        border-radius: 50px 50px;
+        margin: 7px;
+    }
+
+    /*  Projets */
+    .projets-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Formulaire de contact */
+    form {
+        max-width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 20px;
+        padding: 0 1rem;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        width: 90%;
+        box-shadow: 0 0 10px var(--main-color);
+    }
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
-    width: 90%;
-    box-shadow: 0 0 10px var(--main-color);
-}
-}
 /* responsive tablette */
 @media (min-width :768px) and (max-width : 1024px) {
-/* Profil */
-.edito {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-}
-.edito #logo_p {
-    display: none;
-}
+
+    /* Profil */
+    .edito {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .edito #logo_p {
+        display: none;
+    }
 
 }
+
 /* responsive tablette landscape*/
 @media (min-width :768px) and (max-width : 1024px) and (orientation: landscape) {
-/* Profil */
-.edito {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-}
-.edito #logo_p {
-    display: none;
-}
+
+    /* Profil */
+    .edito {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .edito #logo_p {
+        display: none;
+    }
 }
