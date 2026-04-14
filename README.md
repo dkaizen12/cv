@@ -1,18 +1,18 @@
-# 🖥️ Portfolio Web — [Ton Nom]
+# 🖥️ Portfolio Web — Dady Kalangoso
 
-> Portfolio personnel présentant mes projets, compétences et parcours en développement web.
+> Portfolio personnel présentant mes projets, compétences et parcours en développement web version template simple.
 
 ---
 
 ## 📸 Aperçu
 
-![Aperçu du portfolio](docs/Images/preview.png)
+![Aperçu du portfolio](image/photo/rendu.png)
 
 ---
 
 ## 🚀 Démo en ligne
 
-🔗 [Voir le portfolio](https://ton-portfolio.com)
+🔗 [Voir le portfolio](https://dkaizen12.github.io/cv/)
 
 ---
 
@@ -33,27 +33,9 @@
 - ✅ Design responsive (mobile, tablette, desktop)
 - ✅ Menu de navigation fluide
 - ✅ Animations CSS au survol
-- ✅ Section présentation avec image interactive
-- ✅ Section services
+- ✅ Image de projet
+- ✅ footer avec icones réseaux
 - ✅ Formulaire de contact
-
----
-
-## 📁 Structure du projet
-
-```
-portfolio/
-├── index.html
-├── style/
-│   └── style.css
-├── js/
-│   └── main.js
-└── docs/
-    └── Images/
-        ├── favicon.ico
-        ├── pc-gamer.png
-        └── preview.png
-```
 
 ---
 
@@ -61,12 +43,12 @@ portfolio/
 
 1. **Cloner le dépôt**
 ```bash
-git clone https://github.com/ton-username/portfolio.git
+git clone https://github.com/dkaizen12/cv.git
 ```
 
 2. **Ouvrir le projet**
 ```bash
-cd portfolio
+cd cv
 ```
 
 3. **Lancer le projet**
@@ -89,9 +71,9 @@ Ouvre simplement `index.html` dans ton navigateur, ou utilise une extension comm
 
 | Couleur | Hex | Usage |
 |---|---|---|
-| Bleu principal | `#3f65f0` | Boutons, accents |
-| Bleu clair | `#a0b4f9` | Animations, hover |
-| Fond | `var(--bg-color)` | Arrière-plan |
+| violet principal | `#8c00ff` | Boutons, accents, bordures |
+| Noir Sombre | `#080808` | Arriere-plan |
+| blanc | `#ffffff` | textes |
 
 ---
 
@@ -107,8 +89,8 @@ Ouvre simplement `index.html` dans ton navigateur, ou utilise une extension comm
 ## 👤 Auteur
 
 **Ton Nom**
-- GitHub : [@ton-username](https://github.com/dkaizen)
-- LinkedIn : [Ton Nom](https://linkedin.com/in/ton-profil)
+- GitHub : [@dkaizen](https://github.com/dkaizen)
+- LinkedIn : [Dady Kalangoso](https://linkedin.com/in/ton-profil)
 - Email : dadykalangoso@gmail.com
 
 ---
