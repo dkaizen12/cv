@@ -14,6 +14,7 @@
 
   <body>
     <script src="js/script.js"></script>
+    <!-- Header -->
     <header>
       <div class="titre">
         <h1><span>DADY</span> KALANGOSO</h1>
@@ -22,22 +23,15 @@
         <nav>
           <a href="#profil">Mon profil</a>
           <a href="#parcours">Mon parcours</a>
-          <a href="#projet">Mes projets</a>
-          <a href="#skills">Mes compétences</a>
-          <a href="#contact">Contact</a>
+          <a href="#exp">Mes projets</a>
+          <a href="#comp">Mes compétences</a>
+          <a href="#call">Contact</a>
         </nav>
       </div>
     </header>
-    <div class="profil">
-      <a href="image/chat.jpg" target="_blank">
-        <img
-          id="logo"
-          src="image/chat.jpg"
-          alt="image de chat blanc à lunettes"
-        />
-      </a>
-    </div>
+    <!--  Contenu principal -->
     <main>
+      <!-- Header -->
       <section class="edito">
         <div>
           <img src="image/chat.jpg" alt="chat" id="logo" />
@@ -69,7 +63,40 @@
           </div>
         </div>
       </section>
-      <h2>Mes compétences</h2>
+      <!-- Header -->
+      <section class="edito">
+        <div>
+          <img src="image/chat.jpg" alt="chat" id="logo" />
+        </div>
+
+        <div class="citation">
+          <h2>Profil</h2>
+          <p>
+            Etudiant en Bachelor data science & management à l’EPF site de
+            Cachan. Je développe des connaissances en programmation Full Stack,
+            en LLM et IA générative et en nettoyage et analyse des données avec
+            python, SQL et Power Bi, ainsi que dans la gestion de projet avec le
+            Lean Management à travers l’analyse du besoin, les user stories, la
+            UX design, l’écriture de cahier des charges et je possède une vision
+            entrepreneuriale à travers mes connaissances en droit et RH me
+            permettant d’avoir une vision totale d’un projet dans ses parties
+            prévision, technique et éthique. Mes méthodes de travail, mon
+            sérieux et mon perfectionnisme me caractérisent et sont visibles
+            dans mes projets.
+          </p>
+          <div class="icon">
+            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          </div>
+          <div>
+            <button>-> Contactez moi</button>
+          </div>
+        </div>
+      </section>
+      <!-- Header -->
+      <h2 id="comp">Mes compétences</h2>
       <section class="skills">
         <div class="skill">
           <h3>IA</h3>
@@ -122,7 +149,8 @@
           </p>
         </div>
       </section>
-      <h3>Mes expériences</h3>
+      <!-- Header -->
+      <h2 id="exp">Mes expériences</h3>
       <section class="projets">
         <div class="projet">
           <h3>Système de Messagerie Réseau</h3>
@@ -137,9 +165,23 @@
             </p>
           </details>
         </div>
+        <div class="projet">
+          <h3>Système de Messagerie Réseau</h3>
+          <img src="image/photo/sms.png" alt="photo de la messagerie">
+
+          <details>
+            <summary>Projet Python, voir plus ...</summary>
+            <p>
+              Création d’une application de chat avec interface graphique (GUI),
+              gestion des transferts de fichiers et communication client-serveur
+              via sockets.
+            </p>
+          </details>
+        </div>
       </section>
+      <!-- Header -->
       <section class="contact" id="contact">
-      <h2 class="heading">Contactez <span>Moi</span></h2>
+      <h2 class="heading" id="call">Contactez <span>Moi</span></h2>
 
       <form action="#">
         <div class="input-group">
@@ -169,7 +211,7 @@
       </form>
     </section>
     </main>
-
+    <!--  Pied de page -->
     <footer>
       <div class="foot_i">
         <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
@@ -177,8 +219,20 @@
         <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
         <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
       </div>
-
-      <div class="foot_p"><p>Copyright 2026</p></div>
+      <div class="nav_barre">
+        <nav>
+          <a href="#profil">Mon profil</a>
+          <a href="#parcours">Mon parcours</a>
+          <a href="#exp">Mes projets</a>
+          <a href="#comp">Mes compétences</a>
+          <a href="#call">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-c">
+          <a href="mailto:dadykalangoso@gmail.com">dadykalangoso@gmial.com <i class="fa-regular fa-envelope"></i> </a>
+          <a href="tel:+3369512844">+33 6 95 12 84 43 <i class="fa-solid fa-phone"></i></a>
+      </div>
+      <div class="foot_p"><p> © Copyright 2026</p></div>
     </footer>
   </body>
 </html>

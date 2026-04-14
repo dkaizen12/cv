@@ -1,55 +1,109 @@
-body {
-    background-image: url(../image/font1.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-sizing: border-box;
-    margin: 0;
+/* style génerique touchant les éléments html */
+html {
+    overflow-x: hidden;
 }
-:root{
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(61, 38, 10);
+    color: var(--text-color);
+    transition: 0.3s ease all;
+}
+
+:root {
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
     --main-color: #8c00ff;
 }
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
+    z-index: 100;
+
 }
 
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main {
+    padding: 15px;
+    margin-top: 100px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+/* style génerique touchant les éléments html */
 .titre h1 {
-    font-size: 20px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.titre span {
+    color: var(--main-color);
+}
+
+.nav_barre {
+    margin-right: 40px;
 }
 
 .nav_barre a {
-    padding-right: 7px;
+    padding-right: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 .nav_barre a:hover {
     text-decoration: underline;
-    color: gray;
+    color: var(--main-color);
+    transform: scaleY(1.2);
 }
 
+/* style génerique touchant les éléments html */
 .profil {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
     padding: 10px;
 }
 
 .profil #logo {
     width: 140px;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px #8c00ff;
 }
 
-main {
-    padding: 15px;
-}
+/* style génerique touchant les éléments html */
 
 .edito {
     display: flex;
@@ -58,7 +112,7 @@ main {
 .edito #logo {
     width: 240px;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid var(--main-color);
     border-radius: 50%;
 }
 
@@ -70,25 +124,26 @@ main {
     display: flex;
     justify-content: flex-start;
 }
+
 .icon i {
-    border : 1px solid black;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
+    border: 1px solid var(--main-color);
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
     margin-left: 15px;
     margin-bottom: 10px;
-    color: black;
+    color: var(--main-color);
     text-align: center;
     border-radius: 50%;
 }
 
 .icon i:hover {
-    background: burlywood;
-    color: aqua;
-    border : 1px solid black;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: 1px solid black;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
     margin-left: 15px;
     margin-bottom: 10px;
     color: black;
@@ -96,9 +151,20 @@ main {
     border-radius: 50%;
 }
 
+.edito button {
+    width: 350px;
+    height: 40px;
+    border-radius: 50px 50px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+/* style génerique touchant les éléments html */
 .skills {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin: 10%;
 }
 
 .skill {
@@ -108,6 +174,7 @@ main {
     margin-bottom: 10px;
 }
 
+/* style génerique touchant les éléments html */
 .projets {
     display: flex;
     flex-flow: row wrap;
@@ -119,14 +186,17 @@ main {
     margin-right: 10px;
 }
 
-.contact{
+/* style génerique touchant les éléments html */
+.contact {
     background-color: transparent;
 }
-.contact h2{
-    margin-bottom: 50px;
+
+.contact h2 {
+    margin-bottom: 40px;
     color: black;
 }
-.contact form{
+
+.contact form {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -134,14 +204,16 @@ main {
     margin: 15px auto;
     text-align: center;
 }
-.contact form .input-box{
+
+.contact form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .contact form .input-box input,
-.contact form textarea{
-    width: 100%;
+.contact form textarea {
+    width: 80%;
     padding: 20px;
     font-size: 30px;
     color: var(--text-color);
@@ -151,20 +223,21 @@ main {
     margin: 20px 0;
     resize: none;
 }
-.contact form .btn{
+
+.contact form .btn {
     margin-top: 20px;
-}
-footer {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    align-items: center;
-    background-color: blur();
-    margin-top: 50px;
+    width: 350px;
+    height: 40px;
+    border-radius: 50px 50px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
+/* style génerique touchant les éléments html */
+
 .foot_i i {
-    border : 1px solid black;
+    border: 1px solid black;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -178,7 +251,7 @@ footer {
 .foot_i i:hover {
     background: burlywood;
     color: aqua;
-    border : 1px solid black;
+    border: 1px solid black;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -188,3 +261,20 @@ footer {
     text-align: center;
     border-radius: 50%;
 }
+.footer-c {
+    margin-top: 10px;
+}
+.footer-c a {
+    
+    padding-right: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer-c a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+/* responsive mobile */
+
+/* responsive tablette */
