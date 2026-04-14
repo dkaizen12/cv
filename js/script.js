@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //nav.classList.toggle("active");
   //});
 
-  // 2. Contrôle de saisie formulaire [cite: 38]
+  // 2. Contrôle de saisie formulaire 
   const contactForm = document.querySelector("form");
 
   contactForm.addEventListener("submit", (e) => {
