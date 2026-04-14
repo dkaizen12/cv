@@ -1,4 +1,5 @@
 /* style génerique touchant les éléments html */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 html {
     overflow-x: hidden;
 }
@@ -10,7 +11,7 @@ body {
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Roboto', sans-serif ;
     background-color: gray;
     color: var(--text-color);
 }
@@ -26,7 +27,48 @@ h2 {
     padding-left: 40px;
     text-shadow: 0 0 15px black;
 }
+.charge{
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 0.5s ease,
+                visibility 0.5s ease;
+}
+.charge span{
+    background-color: #3f65f0;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 9px;
+    animation: bounce 1.2s infinite alternate ;
+}
+.charge span:nth-child(1) { animation-delay: 0s; }
+.charge span:nth-child(2) { animation-delay: 0.4s; }
+.charge span:nth-child(3) { animation-delay: 0.8s; }
+.charge span:nth-child(4) { animation-delay: 1.2s; }
+.charge.cache {
+    opacity: 0;
+    visibility: hidden;
+}
 
+@keyframes bounce {
+    from { 
+        transform: translateY(0) scale(1); 
+        background-color: #3f65f0; 
+    }
+    to   { 
+        transform: translateY(-20px) scale(1.2); 
+        background-color: #a0b4f9; 
+    }
+}
 /* header : en-tête */
 header {
     width: 100%;
@@ -45,6 +87,10 @@ header {
     font-size: 30px;
     padding-left: 20px;
     text-shadow: 0 0 15px black;
+    transition: 0.5s ease;
+}
+.titre h1:hover{
+    transform: translateY(-5px);
 }
 .titre span {
     color: var(--main-color);
@@ -54,6 +100,8 @@ header {
     margin-right: 30px;
 }
 .nav_barre a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     padding-right: 10px;
     text-decoration: none;
     color: var(--text-color);
@@ -77,6 +125,11 @@ header {
     border-radius: 50%;
     margin-left: 15px;
     box-shadow: 0 0 50px var(--main-color);
+    transition: .5s;
+}
+.edito_h #logo:hover{
+    box-shadow: 0 0 150px var(--main-color);
+    transform: scale(1.1);
 }
 /* Profil */
 .edito {
@@ -84,6 +137,7 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     min-height: 100vh;
+    width: 100%;
 }
 .edito #logo {
     width: 400px;
@@ -92,9 +146,14 @@ header {
     border-radius: 50%;
     margin-left: 25px;
     box-shadow: 0 0 50px var(--main-color);
+    transition: .5s;
+}
+.edito #logo:hover{
+    box-shadow: 0 0 150px var(--main-color);
+    transform: scale(1.1);
 }
 .citation {
-    padding-left: 40px;
+    padding-left: 60px;
     padding-right: 50px;
 }
 .citation p{
@@ -111,6 +170,7 @@ header {
     line-height: 52px;
     margin-left: 15px;
     margin-bottom: 30px;
+    margin-top: 10px;
     color: var(--main-color);
     text-align: center;
     border-radius: 50%;
@@ -136,6 +196,12 @@ header {
     border: 1px solid var(--main-color);
     font-size: 16px;
     box-shadow: 0 0 10px black;
+    transition: .5s ease;
+}
+.edito button:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    transform: translateY(-5px);
 }
 .edito a{
     text-decoration: none;
@@ -161,6 +227,7 @@ header {
     width: 100%;
     height: auto;
     object-fit: cover;
+    box-shadow: 0 0 10px black;
 }
 /* Formulaire de contact */
 form {
@@ -178,6 +245,7 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
+    box-shadow: 0 0 10px black;
 }
 textarea{
     height: 300px;
@@ -191,6 +259,7 @@ form button{
     border: 1px solid var(--main-color);
     font-size: 16px;
     box-shadow: 0 0 10px black;
+    margin-top: 20px;
 }
 form p{
     text-align: center;
@@ -215,7 +284,7 @@ footer {
     color: var(--main-color);
     text-align: center;
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
     box-shadow: 0 0 10px black;
 }
 .foot_i i:hover {
@@ -233,6 +302,20 @@ footer {
     transform: scale(1.3)translateY(-5px);
 }
 
-/* responsive mobile */
+/* responsive mobile  */
+@media (min-width : 320px) and (max-width : 480px){
 
+}
+/* responsive mobile alterner */
+@media (min-width :481px) and (max-width : 767px) {
+
+}
 /* responsive tablette */
+@media (min-width :768px) and (max-width : 1024px) {
+
+}
+/* responsive tablette landscape*/
+@media (min-width :768px) and (max-width : 1024px) and (orientation: landscape) {
+
+}
+
