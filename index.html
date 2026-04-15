@@ -1,157 +1,206 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>CV</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <title>CV</title>
-</head>
-
-<body>
-  <script src="js/script.js"></script>
-  <!-- loader -->
-   <div class="charge">
+  <body>
+    <script src="js/script.js" defer></script>
+    <!-- loader -->
+    <div class="charge">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-  <!-- Header -->
-  <header>
-    <div class="barre">
-      <div class="titre">
-        <h1><span>DADY</span> KALANGOSO</h1>
-      </div>
-      <div class="nav_barre">
-        <nav>
-          <a href="#pro">Mon profil</a>
-          <a href="#exp">Mes projets</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </div>
-    <!-- Accueil -->
-    <div class="edito_h">
-      <img src="image/chat.jpg" alt="chat" id="logo">
-    </div>
-  </header>
-
-  <!--  Contenu principal -->
-  <main>
-    <!-- Profil -->
-    <section class="edito" id="pro">
-      <div>
-        <img src="image/chat.jpg" alt="chat" id="logo_p">
-      </div>
-
-      <div class="citation">
-        <h2>Profil</h2>
-        <p>
-          Étudiant en <span>Bachelor Data Science & Management</span> à l'EPF Cachan,
-          je conçois des solutions <span>end-to-end</span> — de l'analyse du besoin
-          jusqu'au déploiement technique.
-        </p>
-
-        <p>
-          Capable de <span>collecter, nettoyer et visualiser des données</span> avec
-          Python, SQL et Power BI, de développer des applications <span>Full Stack</span>
-          et d'intégrer des modèles d'<span>IA générative et LLM</span> pour automatiser
-          et optimiser des processus métier.
-        </p>
-
-        <p>
-          Ma double compétence <span>technique et managériale</span> — Lean Management,
-          UX Design, cahier des charges, droit et RH — me permet de piloter un projet
-          dans sa globalité : de la <span>vision stratégique</span> à l'<span>exécution
-            technique</span>, en garantissant qualité, éthique et performance.
-        </p>
-        <div class="icon">
-          <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-          <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
-          <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-          <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+    <!-- Header -->
+    <header>
+      <div class="barre">
+        <div class="titre">
+          <h1><span>DADY</span> KALANGOSO</h1>
         </div>
-        <div class="btn">
-          <button onclick="location.href='mailto:dadykalangoso@gmail.com'">-> Contactez moi</button>
-          <button onclick="location.href='docs/Dady_da.pdf'">-> En savoir plus sur moi</button>
+        <div id="burger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav_barre">
+          <nav>
+            <a href="#pro">Mon profil</a>
+            <a href="#exp">Mes projets</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
       </div>
-    </section>
+      <!-- Accueil -->
+      <div class="edito_h">
+        <img src="image/chat.jpg" alt="chat" id="logo" />
+      </div>
+    </header>
 
-    <!-- projet  -->
-    <section class="projets" id="exp">
-      <h2 >Mes expériences</h2>
+    <!--  Contenu principal -->
+    <main>
+      <!-- Profil -->
+      <section class="edito" id="pro">
+        <div>
+          <img src="image/chat.jpg" alt="chat" id="logo_p" />
+        </div>
+
+        <div class="citation">
+          <h2><span>Profil</span></h2>
+          <p>
+            Étudiant en <span>Bachelor Data Science & Management</span> à l'EPF
+            Cachan, je conçois des solutions <span>end-to-end</span> — de
+            l'analyse du besoin jusqu'au déploiement technique. <br />
+            Capable de
+            <span>collecter, nettoyer et visualiser des données</span> avec
+            Python, SQL et Power BI, de développer des applications
+            <span>Full Stack</span> et d'intégrer des modèles d'<span
+              >IA générative et LLM</span
+            >
+            pour automatiser et optimiser des processus métier. <br />
+            Ma double compétence <span>technique et managériale</span> — Lean
+            Management, UX Design, cahier des charges, droit et RH — me permet
+            de piloter un projet dans sa globalité : de la
+            <span>vision stratégique</span> à l'<span>exécution technique</span
+            >, en garantissant qualité, éthique et performance.
+          </p>
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/dady-kalangoso-kangela-job"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/dkaizen12"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://wa.me/qr/W6QJ4H3STLUKJ1"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+          </div>
+          <div class="btn">
+            <button onclick="location.href = 'mailto:dadykalangoso@gmail.com'">
+              -> Contactez moi
+            </button>
+            <button onclick="location.href = 'docs/Dady_da.pdf'">
+              -> En savoir plus sur moi
+            </button>
+          </div>
+          <!-- Carrousel -->
+          <div class="carousel">
+            <button id="prev">⟨ Précédent</button>
+            <button id="next">Suivant ⟩</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- projet  -->
+      <section class="projets" id="exp">
+        <h2><span>Mes</span> expériences</h2>
         <section class="projets-grid">
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=2" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=2"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=1" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=1"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=5" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=5"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=4" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=4"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=3" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=3"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
           <div class="projet">
-            <img src="https://picsum.photos/200/200?random=8" alt="photo de la messagerie">
+            <img
+              src="https://picsum.photos/200/200?random=8"
+              alt="photo de la messagerie"
+            />
             <div class="info">
               <p>projet 1</p>
             </div>
           </div>
         </section>
-    </section>
-    <!-- Formulaire de contact -->
-    <section id="contact">
-      <h2>Me Contacter</h2>
-      <form>
-        <label for="firstname">Prénom</label>
-        <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
+      </section>
+      <!-- Formulaire de contact -->
+      <section id="contact">
+        <h2><span>Me</span> Contacter</h2>
+        <form>
+          <label for="firstname">Prénom</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Votre prénom"
+            required
+          />
 
-        <label for="lastname">Nom</label>
-        <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
+          <label for="lastname">Nom</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Votre nom"
+            required
+          />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
 
-        <button type="submit">Envoyer</button>
-        <p> En soumettant ce formulaire, vous acceptez notre politique de confidentialité (RGPD).</p>
-      </form>
-    </section>
-  </main>
-  <!--  Pied de page -->
-  <footer>
-    <div class="foot_i">
-      <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-      <a href=""><i class="fa-brands fa-github fa-2x"></i></a>
-      <a href=""><i class="fa-brands fa-facebook fa-2x"></i></a>
-      <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i></a>
-    </div>
-    <div class="foot_p">
-      <p> © Dady KALANGOSO 2026</p>
-    </div>
-  </footer>
-</body>
-
+          <button type="submit">Envoyer</button>
+          <p>
+            En soumettant ce formulaire, vous acceptez notre politique de
+            confidentialité (RGPD).
+          </p>
+        </form>
+      </section>
+    </main>
+    <!--  Pied de page -->
+    <footer>
+      <div class="foot_i">
+        <a href="https://www.linkedin.com/in/dady-kalangoso-kangela-job"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/dkaizen12"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://wa.me/qr/W6QJ4H3STLUKJ1"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+      </div>
+      <div class="foot_p">
+        <p>© Dady KALANGOSO 2026</p>
+      </div>
+    </footer>
+  </body>
 </html>

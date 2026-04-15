@@ -5,19 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3600); // 3 secondes
   });
   // 1. Menu Burger (Dynamisme de navigation)
-  //const nav = document.querySelector("nav ul");
- // const header = document.querySelector("header");
+  const menu = document.getElementById("burger");
+  const nav = document.querySelector(".nav_barre");
+  //console.log(nav);
 
-  //const burgerBtn = document.createElement("button");
-  //burgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
-  //burgerBtn.className = "burger-menu";
-  //header.prepend(burgerBtn);
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
 
- // burgerBtn.addEventListener("click", () => {
-    //nav.classList.toggle("active");
-  //});
-
-  // 2. Contrôle de saisie formulaire 
+  // 2. Contrôle de saisie formulaire
   const contactForm = document.querySelector("form");
 
   contactForm.addEventListener("submit", (e) => {
@@ -31,16 +27,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 3. Animation fluide pour les ancres 
-  document.querySelectorAll("nav a").forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
-    });
+  // 3. carrousel edito
+  const data = [
+    {
+      img: "image/chat.jpg",
+      title: "Profil",
+      text: `
+      Étudiant en <span>Bachelor Data Science & Management</span> à l'EPF Cachan,
+      je conçois des solutions end-to-end.
+    `,
+    },
+    {
+      img: "image/photo/1.jpg",
+      title: "Compétences",
+      text: `
+      Maîtrise de <span>Python, SQL, Power BI</span>,
+      développement <span>Full Stack</span> et IA.
+    `,
+    },
+    {
+      img: "image/photo/3.jpg",
+      title: "Vision",
+      text: `
+      Je combine <span>technique et management</span>
+      pour créer des solutions performantes.
+    `,
+    },
+  ];
+
+  let index = 0;
+
+  const img = document.getElementById("logo_p");
+  const title = document.querySelector(".citation h2");
+  const paragraph = document.querySelector(".citation p");
+
+  document.getElementById("next").addEventListener("click", () => {
+    index = (index + 1) % data.length;
+    update();
   });
 
-  // 4. description des projets 
-  
+  document.getElementById("prev").addEventListener("click", () => {
+    index = (index - 1 + data.length) % data.length;
+    update();
+  });
+
+  function update() {
+    img.src = data[index].img;
+    title.innerHTML = data[index].title;
+    paragraph.innerHTML = data[index].text;
+  }
 });
